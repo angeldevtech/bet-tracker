@@ -180,7 +180,7 @@ const BetTracker = () => {
                         value={bet.multiplier}
                         onChange={(e) => handleUpdateBet(index, 'multiplier', e.target.value)}
                       />
-                      <div className="font-bold">${bet.returnAmount}</div>
+                      <div className="font-bold">S/ {bet.returnAmount}</div>
                       <Button
                         size="sm"
                         onClick={() => handleSaveEdit()}
@@ -193,9 +193,9 @@ const BetTracker = () => {
                     <>
                       <div className="font-medium">{bet.title}</div>
                       <div>{bet.name}</div>
-                      <div>${parseFloat(bet.amount).toFixed(2)}</div>
+                      <div>S/ {parseFloat(bet.amount).toFixed(2)}</div>
                       <div>x{parseFloat(bet.multiplier).toFixed(2)}</div>
-                      <div className="font-bold">${bet.returnAmount}</div>
+                      <div className="font-bold">S/ {bet.returnAmount}</div>
                       <Button
                         size="sm"
                         onClick={() => handleEditBet(index)}
